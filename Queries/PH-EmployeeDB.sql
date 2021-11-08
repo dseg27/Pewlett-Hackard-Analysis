@@ -51,3 +51,8 @@ CREATE TABLE titles(
     to_date DATE NOT NULL,
     FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
+
+SELECT first_name, last_name
+FROM employees
+WHERE birth_date BETWEEN '1952-01-01' and '1955-12-31';
+
